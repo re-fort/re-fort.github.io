@@ -1,0 +1,19 @@
+{
+  "name": "re-fort.github.io",
+  "description": "A Webpack boilerplate with vue-loader,vue-resource and vue-router",
+  "author": "re-fort",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/re-fort/re-fort.github.io.git"
+  },
+  "scripts": {
+    "build": "node-sass sass/app.sass css/app.css & pug index.pug",
+    "dev": "node-sass sass/app.sass css/app.css -w & pug index.pug -w"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}

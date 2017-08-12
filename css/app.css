@@ -1,0 +1,86 @@
+/* Font */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+/* Color */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-smoothing: antialiased;
+  overflow-scrolling: touch; }
+
+hr {
+  display: block;
+  height: 1px;
+  background-color: transparent;
+  border: 0;
+  border-top: medium double #555;
+  margin: 1em 0;
+  padding: 0; }
+
+a {
+  color: #FC9D9A; }
+  a:hover {
+    color: #555; }
+
+[v-cloak] {
+  display: none; }
+
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 8.0em; } }
+
+.navbar {
+  background-color: #83AF9B;
+  border-bottom: 10px solid #C8C8A9;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 20px;
+  margin-bottom: 0px; }
+  .navbar .logo {
+    animation: typing 1s steps(60, end); }
+  .navbar .navbar-item {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 20px; }
+    .navbar .navbar-item:hover {
+      color: #FFF; }
+    .navbar .navbar-item.is-tab:hover {
+      border-bottom-color: #C8C8A9; }
+  .navbar .navbar-end .navbar-item {
+    font-weight: 400; }
+  .navbar .navbar-burger:hover {
+    background-color: #83AF9B; }
+  .navbar .navbar-burger.is-active span {
+    background-color: #FFF;
+    border-color: #C8C8A9;
+    border-top-width: 10px; }
+
+.section {
+  flex: 1;
+  background-color: #FCFCFC; }
+  .section i {
+    font-size: 24px; }
+  .section .title {
+    font-size: 24px; }
+  .section .has-image-centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .section .image.is-200x200 {
+    width: 200px;
+    height: 200px; }
+  .section .image .img-circle {
+    border-radius: 50%; }
+
+.footer {
+  background-color: #83AF9B;
+  border-top: 10px solid #C8C8A9; }
+  .footer p {
+    color: #FFF; }

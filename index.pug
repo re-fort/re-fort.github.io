@@ -1,0 +1,94 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="shortcut icon" href="/merkmal.ico")
+
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css" rel="stylesheet")
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet")
+    link(href="css/app.css" rel="stylesheet")
+
+    script(src="https://unpkg.com/vue@2.4.2/dist/vue.min.js")
+
+    title Merkmal
+  body
+    #app(v-cloak)
+      nav.navbar
+        .navbar-brand
+          a.navbar-item.logo(href="https://re-fort.net") Merkmal
+          .navbar-burger.burger(:class="{ 'is-active': isActive }" @click="toggleMenu()")
+            span
+            span
+            span
+        #navMenu.navbar-menu(:class="{ 'is-active': isActive }")
+          .navbar-end
+            a.navbar-item.is-tab(href="#work") Work
+            a.navbar-item.is-tab(href="#contributions") Contributions
+            a.navbar-item.is-tab(href="#about") About
+
+      section#work.section
+        .container
+          .columns
+            .column.is-6.is-offset-3
+              h3.title.has-text-centered Work
+              hr
+          .columns.is-multiline
+            .column.is-4(v-for="repo in myRepos")
+              .card
+                header.card-header
+                  a.card-header-title(:href="repo.url || getGithubUrl(repo.title)")
+                    | {{ repo.title }}
+                  a.card-header-icon(:href="getGithubUrl(repo.title)")
+                    i.fa.fa-github(aria-hidden="true")
+                .card-content
+                  .content
+                    | {{ repo.description }}
+
+      section#contributions.section
+        .container
+          .columns
+            .column.is-6.is-offset-3
+              h3.title.has-text-centered Contributions
+              hr
+          .columns.is-multiline
+            .column.is-4(v-for="repo in contributionRepos")
+              .card
+                header.card-header
+                  a.card-header-title(:href="repo.url || getGithubUrl(repo.title, repo.author)")
+                    | {{ repo.title }}
+                  a.card-header-icon(:href="getGithubUrl(repo.title, repo.author)")
+                    i.fa.fa-github(aria-hidden="true")
+                .card-content
+                  .content
+                    | {{ repo.description }}
+
+      section#about.section
+        .container
+          .columns
+            .column.is-6.is-offset-3
+              h3.title.has-text-centered About
+              hr
+          .columns.is-multiline
+            .column
+              figure.image.is-200x200.has-image-centered
+                img.img-circle(src="assets/image/me.png" alt="re-fort")
+          .columns
+            .column.is-8.is-offset-2
+              h3.title.has-text-centered re-fort
+              .columns.has-text-centered
+                .column.is-6.is-offset-3
+                  a(href="https://twitter.com/re_fort")
+                    i.fa.fa-twitter(aria-hidden="true")
+                  a(href="https://github.com/re-fort")
+                    i.fa.fa-github(aria-hidden="true")
+
+
+      footer.footer
+        .container
+          .content.has-text-centered
+            p Copyright &#169; 2014 - Now
+            p Merkmal
+
+    script(src="js/app.js")

@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Redirect</title>
+  <title>Redirect</title>
 
 </head>
 
 <body>
-	<script>
-	  var redirect_url = "https://re-fort.net/iLis/index.html" + location.search;
-  	  if (document.referrer) {
-    	var referrer = "referrer=" + encodeURIComponent(document.referrer);
-    	redirect_url = redirect_url + (location.search ? '&' : '?') + referrer;
-  	  }
-  	  location.href = redirect_url;
-  	</script>
+  <script>
+    var redirect_url = "https://re-fort.net/iLis/index.html" + location.search;
+      if (document.referrer) {
+      var referrer = "referrer=" + encodeURIComponent(document.referrer);
+      redirect_url = redirect_url + (location.search ? '&' : '?') + referrer;
+      }
+      location.href = redirect_url;
+    </script>
 </body>
 </html>
