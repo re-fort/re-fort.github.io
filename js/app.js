@@ -5,6 +5,18 @@ new Vue({
     return {
       myRepos: [
         {
+          title: 'line-deco-converter',
+          description: 'converts text to LINE deco and vice versa',
+        },
+        {
+          title: 'che-tsumi',
+          description: 'cherry-pick + chatsumi(茶摘み)',
+        },
+        {
+          title: 'e2e-boilerplate',
+          description: 'A boilerplate for E2E(End-To-End) tests with Selenium docker containers',
+        },
+        {
           title: 'run-snippets',
           description: 'Chrome and Firefox extension to run arbitrarily snippets',
         },
@@ -43,6 +55,18 @@ new Vue({
         },
       ],
       contributionRepos: [
+        {
+          author: 'vuejs',
+          title: 'vuejs.org',
+          description: '📃 The official documentation site for Vue.js',
+          url: 'https://vuejs.org',
+        },
+        {
+          author: 'vuejs',
+          title: 'vue-test-utils',
+          description: 'Utilities for testing Vue components',
+          url: 'https://vue-test-utils.vuejs.org',
+        },
         {
           author: 'SimulatedGREG',
           title: 'electron-vue',
