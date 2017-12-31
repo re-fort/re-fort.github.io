@@ -1,6 +1,6 @@
 {
   "name": "re-fort.github.io",
-  "description": "A Webpack boilerplate with vue-loader,vue-resource and vue-router",
+  "description": "my website",
   "author": "re-fort",
   "license": "MIT",
   "repository": {
@@ -13,7 +13,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.7.2",
     "pug-cli": "^1.0.0-alpha6"
   }
 }
