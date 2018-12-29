@@ -24,9 +24,23 @@ html(lang="en")
             span
         #navMenu.navbar-menu(:class="{ 'is-active': isActive }")
           .navbar-end
+            a.navbar-item.is-tab(href="#blog") Blog
             a.navbar-item.is-tab(href="#work") Work
             a.navbar-item.is-tab(href="#contributions") Contributions
             a.navbar-item.is-tab(href="#about") About
+
+      section#blog.section
+        .container
+          .columns
+            .column.is-6.is-offset-3
+              h3.title.has-text-centered Blog
+              hr
+          .columns.is-multiline
+            ul.column.is-12(v-for="blog in blogs")
+              li.blog-list
+                span.blog-title(:id="blog.id" @click="setSelectedBlogId(blog.id)")
+                  | {{ blog.date }} - {{ blog.title }}
+                div.blog-body(v-if="blog.id === selectedBlogId" v-html="blog.body")
 
       section#work.section
         .container
