@@ -79,6 +79,25 @@ a {
     height: 200px; }
   .section .image .img-circle {
     border-radius: 50%; }
+  .section .blog-list {
+    list-style-type: circle; }
+  .section .blog-title {
+    color: #FC9D9A;
+    cursor: pointer; }
+  .section .blog-body {
+    margin: 8px; }
+    .section .blog-body h1 {
+      font-size: 18px;
+      text-decoration: underline;
+      margin: 8px 0; }
+    .section .blog-body h2 {
+      font-size: 16px;
+      text-decoration: underline;
+      margin: 8px 0; }
+    .section .blog-body h3 {
+      font-size: 14px;
+      text-decoration: underline;
+      margin: 8px 0; }
 
 .footer {
   background-color: #83AF9B;
