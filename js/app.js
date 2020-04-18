@@ -5,6 +5,11 @@ new Vue({
     return {
       myRepos: [
         {
+          title: 'IPOrder',
+          description: 'IPO（新規公開株）のステータス管理・申し込みにかかる手間をより少なくするアプリです。',
+          url: 'https://iporder.app/',
+        },
+        {
           title: 'line-deco-converter',
           description: 'converts text to LINE deco and vice versa',
         },
