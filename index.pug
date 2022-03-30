@@ -24,9 +24,28 @@ html(lang="en")
             span
         #navMenu.navbar-menu(:class="{ 'is-active': isActive }")
           .navbar-end
+            a.navbar-item.is-tab(href="#nazo") Nazo
             a.navbar-item.is-tab(href="#work") Work
             a.navbar-item.is-tab(href="#contributions") Contributions
             a.navbar-item.is-tab(href="#about") About
+
+      section#nazo.section
+        .container
+          .columns
+            .column.is-6.is-offset-3
+              h3.title.has-text-centered Nazo
+              hr
+          .columns.is-multiline
+            .column.is-4(v-for="nazo in nazos")
+              .card
+                header.card-header
+                  a.card-header-title(:href="nazo.url")
+                    | {{ nazo.title }}
+                  a.card-header-icon(:href="nazo.url")
+                    i.fa.fa-link(aria-hidden="true")
+                .card-content
+                  .content
+                    | {{ nazo.description }}
 
       section#work.section
         .container
@@ -79,7 +98,7 @@ html(lang="en")
               h3.title.has-text-centered re-fort
               .columns.has-text-centered
                 .column.is-6.is-offset-3
-                  a(href="https://twitter.com/re_fort")
+                  a(href="https://twitter.com/re_fort" style="margin-right: 16px;")
                     i.fa.fa-twitter(aria-hidden="true")
                   a(href="https://github.com/re-fort")
                     i.fa.fa-github(aria-hidden="true")

@@ -3,6 +3,18 @@ new Vue({
 
   data () {
     return {
+      nazos: [
+        {
+          title: 'ハローワールド',
+          description: '難易度: ★★',
+          url: 'https://nazo-hello-world.netlify.app/',
+        },
+        {
+          title: 'アンロック',
+          description: '難易度: ★★★',
+          url: 'https://nazo-unlock.netlify.app/welcome',
+        },
+      ],
       myRepos: [
         {
           title: 'IPOrder',
@@ -61,31 +73,31 @@ new Vue({
       ],
       contributionRepos: [
         {
-          author: 'vuejs',
+          title: 'rrweb',
+          description: 'record and replay the web',
+          url: 'https://github.com/rrweb-io/rrweb',
+        },
+        {
           title: 'vuejs.org',
           description: '📃 The official documentation site for Vue.js',
           url: 'https://vuejs.org',
         },
         {
-          author: 'vuejs',
           title: 'vue-test-utils',
           description: 'Utilities for testing Vue components',
           url: 'https://vue-test-utils.vuejs.org',
         },
         {
-          author: 'SimulatedGREG',
           title: 'electron-vue',
           description: 'An Electron & Vue.js quick start boilerplate with vue-cli scaffolding, common Vue plugins, electron-packager/electron-builder, unit/e2e testing, vue-devtools, and webpack',
           url: 'https://simulatedgreg.gitbooks.io/electron-vue/content/',
         },
         {
-          author: 'webpack',
           title: 'webpack.js.org',
           description: 'New repository for webpack documentation and more!',
           url: 'https://webpack.js.org/',
         },
         {
-          author: 'vuejs',
           title: 'jp.vuejs.org',
           description: '🇯🇵 Japanese translation for vuejs.org',
           url: 'https://jp.vuejs.org/',
