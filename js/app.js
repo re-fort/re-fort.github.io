@@ -14,6 +14,11 @@ new Vue({
           description: '難易度: ★★★',
           url: 'https://nazo-unlock.netlify.app/welcome',
         },
+        {
+          title: 'すべてが　になる',
+          description: '難易度: ★',
+          url: 'https://subetega-ninaru.re-fort.dev/welcome',
+        },
       ],
       myRepos: [
         {
