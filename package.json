@@ -13,7 +13,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "node-sass": "^7.0.0",
+    "node-sass": "^9.0.0",
     "pug-cli": "^1.0.0-alpha6"
   }
 }
