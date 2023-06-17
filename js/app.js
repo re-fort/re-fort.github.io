@@ -5,20 +5,10 @@ new Vue({
     return {
       nazos: [
         {
-          title: 'ハローワールド',
-          description: '難易度: ★★',
-          url: 'https://nazo-hello-world.netlify.app/',
-        },
-        {
-          title: 'アンロック',
-          description: '難易度: ★★★',
-          url: 'https://nazo-unlock.netlify.app/welcome',
-        },
-        {
-          title: 'すべてが　になる',
-          description: '難易度: ★',
-          url: 'https://subetega-ninaru.re-fort.dev/welcome',
-        },
+          title: '制作謎まとめ',
+          description: '制作に関わった謎解きをまとめています',
+          url: 'https://note.com/re_fort/n/nd716b0e776e1',
+        }
       ],
       myRepos: [
         {
